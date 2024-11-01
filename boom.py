@@ -30,7 +30,7 @@ def content_boom():
 
 # 发送文件内容
 def file_boom():
-    path = input("请指定文件按路径:\n")
+    path = input("请指定文件路径:\n")
     path = path.replace('"', '')
     with open(path, "r", encoding="utf-8") as f:
         content = f.read()
